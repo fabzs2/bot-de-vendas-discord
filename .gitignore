@@ -1,0 +1,75 @@
+# ============================================================
+# Git Ignore - Bot de Vendas Discord
+# ============================================================
+
+# 🔒 Arquivos de Ambiente e Segredos (NUNCA SUBIR)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.cert
+
+# 🗄️ Banco de Dados Local SQLite
+*.db
+*.sqlite
+*.sqlite3
+vendas.db
+
+# 🐍 Ambientes Virtuais Python
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 📦 Cache e Compilação Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 📝 Logs e Arquivos Temporários
+*.log
+logs/
+*.tmp
+*.temp
+scratch/
+
+# 💻 Configurações de IDEs e Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# 🍏 Sistema Operacional (macOS / Windows / Linux)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini

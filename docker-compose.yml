@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  bot-vendas:
+    build: .
+    container_name: bot_vendas_discord
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Garante a persistência do banco de dados SQLite entre reinicializações
+      - ./vendas.db:/app/vendas.db
